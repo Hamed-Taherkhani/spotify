@@ -1,0 +1,43 @@
+#root {
+  background-image: linear-gradient(-45deg, #000, #1ed760 120%);
+  min-height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-space-between {
+  align-content: space-between;
+}
+
+.heading1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.transition-350 {
+  transition: 350ms ease;
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,67 @@
+@import "./config";
+
+.root-header {
+  background-color: map-get($base-colors, green-c);
+  padding: 0.5rem 0 0.5rem 1rem;
+
+  .left {
+    .spotify-logo {
+      margin-right: 0.2rem;
+
+      svg {
+        width: 27px;
+        height: 27px;
+      }
+    }
+  }
+
+  .right {
+    .list {
+      .open-app {
+        padding: 0.5rem 0.8rem;
+        border-radius: 40px;
+        background-color: white;
+        color: map-get($base-colors, black-c);
+        font-size: map-get($font-size, smaller);
+      }
+
+      .search-btn {
+        padding: 0.5rem 1rem;
+      }
+
+      .menu-container {
+        .menu .navbar {
+          .log-in a,
+          .sign-up a {
+            font-weight: 700 !important;
+            font-size: map-get($font-size, large);
+
+            &:hover {
+              color: #fff !important;
+            }
+          }
+
+          .log-in a {
+            color: #0084ff !important;
+          }
+
+          .sign-up {
+            &::after {
+              content: " ";
+              display: inline-block;
+              width: 20px;
+              height: 3px;
+              background-color: #fff;
+              border-radius: 5px;
+              margin: 1.5rem 0 1.5rem 1rem;
+            }
+
+            a {
+              color: #1ed760 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

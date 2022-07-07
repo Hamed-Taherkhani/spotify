@@ -1,0 +1,45 @@
+.root-header {
+  background-color: #1ed760;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+.root-header .left .spotify-logo {
+  margin-right: 0.2rem;
+}
+.root-header .left .spotify-logo svg {
+  width: 27px;
+  height: 27px;
+}
+.root-header .right .list .open-app {
+  padding: 0.5rem 0.8rem;
+  border-radius: 40px;
+  background-color: white;
+  color: #000;
+  font-size: 0.8rem;
+}
+.root-header .right .list .search-btn {
+  padding: 0.5rem 1rem;
+}
+.root-header .right .list .menu-container .menu .navbar .log-in a,
+.root-header .right .list .menu-container .menu .navbar .sign-up a {
+  font-weight: 700 !important;
+  font-size: 1.5rem;
+}
+.root-header .right .list .menu-container .menu .navbar .log-in a:hover,
+.root-header .right .list .menu-container .menu .navbar .sign-up a:hover {
+  color: #fff !important;
+}
+.root-header .right .list .menu-container .menu .navbar .log-in a {
+  color: #0084ff !important;
+}
+.root-header .right .list .menu-container .menu .navbar .sign-up::after {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 1.5rem 0 1.5rem 1rem;
+}
+.root-header .right .list .menu-container .menu .navbar .sign-up a {
+  color: #1ed760 !important;
+}/*# sourceMappingURL=Header.css.map */

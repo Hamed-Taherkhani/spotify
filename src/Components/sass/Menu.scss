@@ -1,0 +1,74 @@
+@import "./config";
+
+.menu {
+  .toggle-menu-btn {
+    z-index: 100;
+    position: relative;
+    align-self: stretch;
+    padding: 0.5rem 1rem;
+
+    &.open {
+      .line {
+        &:nth-child(1) {
+          width: 0;
+        }
+
+        &:nth-child(2) {
+          transform: rotate(-45deg);
+          top: 7px;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    .line {
+      display: block;
+      width: 25px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: #fff;
+      position: relative;
+      transition: 300ms ease;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .navbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: map-get($base-colors, black-c);
+    padding: 3rem 0 2rem 1rem;
+    overflow: hidden;
+    transition: 500ms ease;
+
+    .list {
+      .item {
+        a {
+          display: block;
+          padding: 1rem;
+          font-size: map-get($font-size, bigger);
+          font-weight: 500;
+          white-space: nowrap;
+
+          &:hover {
+            color: #004f99 !important;
+          }
+        }
+      }
+    }
+
+    &.close {
+      width: 0;
+      padding-left: 0;
+    }
+  }
+}
