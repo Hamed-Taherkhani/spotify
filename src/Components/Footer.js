@@ -108,15 +108,24 @@ function socialMedia() {
   return (
     <ul className="social-media-list">
       <li className="social-media">
-        <a>{INSTAGRAM}</a>
+        <a href="https://instagram.com/_hamedtaherkhani_/" target="_blank">
+          {INSTAGRAM}
+        </a>
       </li>
 
       <li className="social-media">
-        <a>{LINKEDIN}</a>
+        <a
+          href="https://linkedin.com/in/hamed-taherkhani-217910210/"
+          target="_blank"
+        >
+          {LINKEDIN}
+        </a>
       </li>
 
       <li className="social-media">
-        <a>{GITHUB}</a>
+        <a href="https://github.com/Hamed-Taherkhani/" target="_blank">
+          {GITHUB}
+        </a>
       </li>
     </ul>
   );

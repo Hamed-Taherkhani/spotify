@@ -11,26 +11,28 @@ body {
   color: map-get($base-colors, white-c);
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
+@media screen and (pointer: fine) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f125;
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f125;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 
 .flex {
