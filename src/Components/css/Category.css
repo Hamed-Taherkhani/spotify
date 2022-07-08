@@ -16,7 +16,7 @@
   display: flex;
   width: 100%;
   overflow: auto hidden;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 .category-component-539 .music-list .music {
   text-align: center;

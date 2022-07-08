@@ -7,8 +7,12 @@ import cover4 from "./../Media/images/Zayn4.jpg";
 import cover5 from "./../Media/images/Zayn5.jpg";
 
 function Main() {
+  const bg = {
+    backgroundImage: "linear-gradient(-45deg,#000 78%, #1ed760)",
+  };
+
   return (
-    <main className="root-main">
+    <main className="root-main" style={bg}>
       {categories().map((item, index) => (
         <Category title={item.title} musicsInfo={item.musics} key={index} />
       ))}
