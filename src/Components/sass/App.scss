@@ -1,7 +1,17 @@
 @import "./config";
 
-#root {
+body {
   min-height: 100vh;
+  height: max-content;
+}
+
+#root {
+  background-image: linear-gradient(
+    -45deg,
+    map-get($base-colors, black-c) 71%,
+    map-get($base-colors, green-c)
+  );
+  height: 100%;
   font-family: "Ubuntu", sans-serif;
   color: map-get($base-colors, white-c);
 }

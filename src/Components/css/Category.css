@@ -1,11 +1,11 @@
-.category-component-539:not(:nth-child(2)) {
+.category-component-539:not(:first-child) {
   margin-top: 3rem;
 }
-.category-component-539:nth-child(2) {
-  margin-top: 1.5rem;
+.category-component-539:first-child {
+  padding-top: 1.5rem;
 }
 .category-component-539:last-child {
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .category-component-539 .category-title {
   font-size: 1.3rem;

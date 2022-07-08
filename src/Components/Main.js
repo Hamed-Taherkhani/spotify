@@ -1,6 +1,5 @@
 import React from "react";
 import Category from "./Category";
-import "./css/Main.css";
 import cover0 from "./../Media/images/Zayn0.jpg";
 import cover1 from "./../Media/images/Zayn1.jpg";
 import cover3 from "./../Media/images/Zayn 3.jpg";
@@ -10,8 +9,6 @@ import cover5 from "./../Media/images/Zayn5.jpg";
 function Main() {
   return (
     <main className="root-main">
-      <div className="background"></div>
-
       {categories().map((item, index) => (
         <Category title={item.title} musicsInfo={item.musics} key={index} />
       ))}
