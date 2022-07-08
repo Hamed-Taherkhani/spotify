@@ -1,12 +1,6 @@
 @import "./config";
 
 #root {
-  background-image: linear-gradient(
-    -45deg,
-    map-get($base-colors, black-c),
-    map-get($base-colors, green-c) 120%
-  );
-
   min-height: 100vh;
   font-family: "Ubuntu", sans-serif;
   color: map-get($base-colors, white-c);

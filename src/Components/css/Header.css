@@ -1,6 +1,10 @@
 .root-header {
   background-color: #1ed760;
   padding: 0.5rem 0 0.5rem 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .root-header .left .spotify-logo {
   margin-right: 0.2rem;

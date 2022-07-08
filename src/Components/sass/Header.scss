@@ -3,6 +3,9 @@
 .root-header {
   background-color: map-get($base-colors, green-c);
   padding: 0.5rem 0 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   .left {
     .spotify-logo {
