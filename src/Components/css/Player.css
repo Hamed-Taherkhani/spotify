@@ -1,0 +1,199 @@
+.player {
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1002;
+  transition: 500ms ease;
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
+  transition-property: width, height, bottom, left, background-color, border-radius, -webkit-backdrop-filter;
+  transition-property: width, height, bottom, left, background-color, backdrop-filter, border-radius;
+  transition-property: width, height, bottom, left, background-color, backdrop-filter, border-radius, -webkit-backdrop-filter;
+}
+.player.close {
+  height: 80px;
+  width: calc(100% - 20px);
+  border-radius: 10px;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.568627451);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1803921569);
+  z-index: 900;
+}
+.player.close header {
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+}
+.player.close main {
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #000;
+}
+.player.close main .cover {
+  width: 60px;
+  height: 60px;
+  border-radius: 50% !important;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.player.close footer {
+  padding: 0;
+}
+.player.close footer .song-details {
+  position: absolute;
+  left: 80px;
+  top: 10px;
+}
+.player.close footer .song-details .song-name {
+  margin-right: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.player.close footer .song-details .singer {
+  font-size: 0.9rem;
+}
+.player.close footer .music-controls .range {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.player.close footer .music-controls .range .line .circle {
+  display: none;
+}
+.player.close footer .music-controls .range .time {
+  display: none;
+}
+.player.close footer .music-controls .controls {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.player.close footer .music-controls .controls button {
+  padding: 0.5rem 0.7rem;
+}
+.player.close footer .music-controls .controls button svg {
+  width: 20px;
+  height: 20px;
+}
+.player header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.player header .slide-btn, .player header > div {
+  width: 30px;
+  height: 30px;
+}
+.player header .slide-btn .line {
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: relative;
+}
+.player header .slide-btn .line:first-child {
+  transform: rotate(45deg);
+  left: 5px;
+}
+.player header .slide-btn .line:last-child {
+  transform: rotate(-45deg);
+}
+.player main {
+  display: flex;
+  justify-content: center;
+  transition: 600ms ease;
+}
+.player main .cover {
+  width: 150px;
+  height: 150px;
+  transition: inherit;
+}
+.player main .cover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.player footer {
+  padding: 1rem;
+  transition: all 600ms ease;
+}
+.player footer .song-details {
+  width: 70%;
+}
+.player footer .song-details .song-name {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  transition: inherit;
+}
+.player footer .song-details .singer {
+  transition: inherit;
+  font-size: 1.1rem;
+}
+.player footer .music-controls {
+  margin-top: 1rem;
+  transition: inherit;
+}
+.player footer .music-controls .range {
+  position: relative;
+  width: 100%;
+  transition: inherit;
+}
+.player footer .music-controls .range .line {
+  background-color: rgba(190, 190, 190, 0.6039215686);
+  height: 3px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.player footer .music-controls .range .line .circle {
+  position: absolute;
+  left: -20px;
+  padding: 10px 20px;
+}
+.player footer .music-controls .range .line .circle span {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.5568627451) 4px 0 6px;
+}
+.player footer .music-controls .range .time {
+  position: absolute;
+  top: 10px;
+  font-size: 0.8rem;
+  color: #b1b1b1;
+}
+.player footer .music-controls .range .time.start-time {
+  left: 0;
+}
+.player footer .music-controls .range .time.end-time {
+  right: 0;
+}
+.player footer .music-controls .controls {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.player footer .music-controls .controls button {
+  padding: 0.7rem 1rem;
+}
+.player footer .music-controls .controls .next-btn svg {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=Player.css.map */
