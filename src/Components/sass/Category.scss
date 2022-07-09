@@ -31,8 +31,12 @@
       }
 
       .cover {
-        width: 130px;
-        height: 130px;
+        width: 43vw;
+        height: 43vw;
+        min-width: 130px;
+        min-height: 130px;
+        max-width: 200px;
+        max-height: 200px;
         overflow: hidden;
         object-fit: cover;
         border-radius: 10px;

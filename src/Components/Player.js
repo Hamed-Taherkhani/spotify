@@ -60,8 +60,10 @@ function togglePlayer() {
 
   if (classes.contains("close")) {
     classes.replace("close", "open");
+    document.body.style = "height: 0px !important; overflow: hidden";
   } else {
     classes.replace("open", "close");
+    document.body.attributes.removeNamedItem("style");
   }
 }
 

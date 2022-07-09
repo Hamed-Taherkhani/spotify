@@ -12,9 +12,8 @@ $circle-size: 11px;
   justify-content: space-between;
   z-index: 1002;
   transition: 500ms ease;
-  backdrop-filter: blur(0);
   transition-property: width, height, bottom, left, background-color,
-    backdrop-filter, border-radius;
+    border-radius;
 
   &.close {
     height: 80px;
@@ -22,8 +21,8 @@ $circle-size: 11px;
     border-radius: 10px;
     bottom: 10px;
     left: 10px;
-    background-color: #00000091;
-    backdrop-filter: blur(10px);
+    background-color: #000000b0;
+    backdrop-filter: blur(5px);
     border: 1px solid #ffffff2e;
     z-index: 900;
 
@@ -42,7 +41,6 @@ $circle-size: 11px;
         width: 60px;
         height: 60px;
         border-radius: 50% !important;
-        overflow: hidden;
         position: absolute;
         top: 10px;
         left: 10px;
@@ -139,12 +137,16 @@ $circle-size: 11px;
   main {
     display: flex;
     justify-content: center;
-    transition: 600ms ease;
 
     .cover {
-      width: 150px;
-      height: 150px;
-      transition: inherit;
+      width: 55vw;
+      height: 55vw;
+      max-width: 500px;
+      max-height: 500px;
+      transition: 300ms ease;
+      transition-property: width, height;
+      border-radius: 2px !important;
+      overflow: hidden;
 
       img {
         width: 100%;
@@ -156,7 +158,6 @@ $circle-size: 11px;
 
   footer {
     padding: 1rem;
-    transition: all 600ms ease;
 
     .song-details {
       width: 70%;
@@ -164,23 +165,19 @@ $circle-size: 11px;
       .song-name {
         font-size: 1.3rem;
         margin-bottom: 0.3rem;
-        transition: inherit;
       }
 
       .singer {
-        transition: inherit;
         font-size: 1.1rem;
       }
     }
 
     .music-controls {
       margin-top: 1rem;
-      transition: inherit;
 
       .range {
         position: relative;
         width: 100%;
-        transition: inherit;
 
         .line {
           background-color: #bebebe9a;
