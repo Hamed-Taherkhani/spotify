@@ -1,56 +1,73 @@
 import React from "react";
 import "./css/Player.css";
 import { PLAY, NEXT_PREV_BUTTON } from "../Media/media";
-import cover0 from "./../Media/images/Zayn0.jpg";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 function Player() {
+  const locationSearch = useLocation().search;
+  let singer, songName, cover, search;
+
+  if (locationSearch.length !== 0) {
+    search = locationSearch.slice(1).split("?");
+    singer = search[0].replaceAll("-", " ");
+    songName = search[1].replaceAll("-", " ");
+    cover = search[2];
+  }
+
   return (
-    <section className="player close" id="player-2947">
-      <header>
-        <button className="slide-btn" onClick={togglePlayer}>
-          <span className="line"></span>
-          <span className="line"></span>
-        </button>
+    <Routes>
+      <Route
+        path="/music/:category/:index"
+        element={
+          <section className="player close" id="player-2947">
+            <header>
+              <button className="slide-btn" onClick={togglePlayer}>
+                <span className="line"></span>
+                <span className="line"></span>
+              </button>
 
-        <p className="song-name">Song name</p>
+              <p className="song-name">{songName}</p>
 
-        <div></div>
-      </header>
+              <div></div>
+            </header>
 
-      <main>
-        <div className="cover" onClick={togglePlayer}>
-          <img src={cover0} alt="" />
-        </div>
-      </main>
-
-      <footer>
-        <div className="song-details" onClick={togglePlayer}>
-          <p className="song-name">Song name</p>
-
-          <p className="singer">Singer</p>
-        </div>
-
-        <div className="music-controls">
-          <div className="range">
-            <div className="line">
-              <div className="circle">
-                <span></span>
+            <main>
+              <div className="cover" onClick={togglePlayer}>
+                <img src={cover} alt={`${songName} - ${singer}`} />
               </div>
-            </div>
+            </main>
 
-            <div className="time start-time">01:33</div>
+            <footer>
+              <div className="song-details" onClick={togglePlayer}>
+                <p className="song-name">{songName}</p>
 
-            <div className="time end-time">03:33</div>
-          </div>
+                <p className="singer">{singer}</p>
+              </div>
 
-          <div className="controls">
-            <button className="prev-btn">{NEXT_PREV_BUTTON}</button>
-            <button className="play-btn">{PLAY}</button>
-            <button className="next-btn">{NEXT_PREV_BUTTON}</button>
-          </div>
-        </div>
-      </footer>
-    </section>
+              <div className="music-controls">
+                <div className="range">
+                  <div className="line">
+                    <div className="circle">
+                      <span></span>
+                    </div>
+                  </div>
+
+                  <div className="time start-time">01:33</div>
+
+                  <div className="time end-time">03:33</div>
+                </div>
+
+                <div className="controls">
+                  <button className="prev-btn">{NEXT_PREV_BUTTON}</button>
+                  <button className="play-btn">{PLAY}</button>
+                  <button className="next-btn">{NEXT_PREV_BUTTON}</button>
+                </div>
+              </div>
+            </footer>
+          </section>
+        }
+      />
+    </Routes>
   );
 }
 

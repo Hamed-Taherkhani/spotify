@@ -26,23 +26,28 @@ function categories() {
       title: "Bleib auf dem Laufeden",
       musics: [
         {
-          name: "Music Name",
+          name: "Flames",
+          singer: "Zayn",
           cover: cover0,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover1,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover3,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover4,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover5,
         },
       ],
@@ -52,22 +57,27 @@ function categories() {
       musics: [
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover0,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover1,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover3,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover4,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover5,
         },
       ],
@@ -77,22 +87,27 @@ function categories() {
       musics: [
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover0,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover1,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover3,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover4,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover5,
         },
       ],
@@ -102,22 +117,27 @@ function categories() {
       musics: [
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover0,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover1,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover3,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover4,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover5,
         },
       ],
@@ -127,22 +147,27 @@ function categories() {
       musics: [
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover0,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover1,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover3,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover4,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover5,
         },
       ],
@@ -152,22 +177,27 @@ function categories() {
       musics: [
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover0,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover1,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover3,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover4,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover5,
         },
       ],
@@ -177,22 +207,27 @@ function categories() {
       musics: [
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover0,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover1,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover3,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover4,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover5,
         },
       ],
@@ -202,22 +237,27 @@ function categories() {
       musics: [
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover0,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover1,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover3,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover4,
         },
         {
           name: "Music Name",
+          singer: "Singer",
           cover: cover5,
         },
       ],
