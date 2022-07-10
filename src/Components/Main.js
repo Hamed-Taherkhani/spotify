@@ -8,7 +8,7 @@ import cover5 from "./../Media/images/Zayn5.jpg";
 
 function Main() {
   const bg = {
-    backgroundImage: "linear-gradient(-45deg,#000 78%, #1ed760)",
+    backgroundImage: "linear-gradient(-45deg,#000 87%, #1ed760)",
   };
 
   return (
