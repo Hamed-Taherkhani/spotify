@@ -17,18 +17,15 @@ body {
     width: 5px;
     height: 5px;
   }
-
   /* Track */
   ::-webkit-scrollbar-track {
     background: rgba(241, 241, 241, 0.1450980392);
   }
-
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 5px;
   }
-
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
