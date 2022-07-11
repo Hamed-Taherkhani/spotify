@@ -52,8 +52,7 @@ function Player() {
                     </div>
                   </div>
 
-                  <div className="time start-time">01:33</div>
-
+                  <div className="time start-time">00:00</div>
                   <div className="time end-time">03:33</div>
                 </div>
 

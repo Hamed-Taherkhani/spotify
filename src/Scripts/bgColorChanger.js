@@ -3,7 +3,7 @@ const ColorThief = window.ColorThief;
 
 document.body.onload = () => {
   const image = document.querySelector(
-    "#root  section:nth-child(1) li:nth-child(1)  img"
+    "#root section:nth-child(1) li:nth-child(1) img"
   );
 
   const headerElem = document.querySelector("#root> .App > header"),
